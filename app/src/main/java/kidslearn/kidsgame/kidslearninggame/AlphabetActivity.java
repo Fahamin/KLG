@@ -203,6 +203,7 @@ public class AlphabetActivity extends Activity implements OnClickListener, OnTou
     public void onBackPressed() {
         Intent intent = new Intent(AlphabetActivity.this, MainActivity.class);
         startActivity(intent);
+
     }
 
 
