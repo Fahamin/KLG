@@ -43,7 +43,7 @@ public class SettingsActivity extends AppCompatActivity {
     boolean vibration;
     ImageView text;
     String name;
-    ImageView imgRateUs, img_Privacy;
+    ImageView imgRateUs;
     ImageView imgShare;
     ImageView sound;
     ImageView music;
@@ -74,7 +74,7 @@ public class SettingsActivity extends AppCompatActivity {
         rootLayout = findViewById(R.id.rootlay);
         imgShare = findViewById(R.id.imgShare);
         imgRateUs = findViewById(R.id.imgRateUs);
-        img_Privacy = findViewById(R.id.img_Privacy);
+
 
         sound = findViewById(R.id.img_sound);
         music = findViewById(R.id.img_music);
@@ -164,14 +164,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             }
         });
-        img_Privacy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://mycodingschooll.blogspot.com/2023/04/kids-learner-game.html")));
 
-            }
-        });
         imgShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
